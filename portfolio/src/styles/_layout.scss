@@ -1,0 +1,13 @@
+.App {
+    .topnav,
+    .navbar {
+        position: absolute;
+        width: 100vw;
+        background-color: transparent;
+    }
+    .main-content {
+        width: 100%;
+        background-color: #10121B;
+        min-height: 100vh;
+    }
+}
