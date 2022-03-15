@@ -1,6 +1,13 @@
 .navbar {
-    position: sticky;
-    top: 0;
+    position: fixed!important;
+    top: 0!important;
+    width: 100vw!important;
+    background-color: #10121B;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 

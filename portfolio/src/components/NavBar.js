@@ -1,7 +1,5 @@
 import React from 'react'
 import {Navbar, Container, Nav} from 'react-bootstrap';
-import { Outlet, Link } from "react-router-dom";
-import ReactLogo from '../logo.svg'
 
 import '../styles/NavBar.scss'
 const NavBar = () => {
@@ -9,23 +7,24 @@ const NavBar = () => {
     
     <>
       <Navbar variant="dark" expand="lg" sticky="top">
-          <Container>
+          <Container className="mx-auto">
             
-            <Navbar.Brand href="/"><img src={ReactLogo} alt="React Logo" style={{width: '3rem', height:'3rem'}}/>Brand</Navbar.Brand>
+            <Navbar.Brand href="/">Brand</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
               
-                  <Link className="nav-link" to="/">Home</Link>
-                  <Link className="nav-link" to="/page2">Page 2</Link>
-                  <Link className="nav-link" to="/page3">Page 3</Link>
+                <Nav.Link href="#hero">Home</Nav.Link>
+                <Nav.Link href="#about">About</Nav.Link>
+                <Nav.Link href="#skills">Skills</Nav.Link>
+                <Nav.Link href="#projects">Projects</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
                 
               </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
 
-        <Outlet/>
     </>      
     
   )

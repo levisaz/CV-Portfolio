@@ -4,12 +4,28 @@
 *::after {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box!important;
 }
 
 body {
     color: #a4acc4!important;
-    font-family: 'M PLUS Rounded 1c', sans-serif!important;
+    font-family: 'Roboto Slab', serif!important;
     font-size: .2rem;
     overflow-x: hidden;
+    overflow: overlay;
 }
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0056d898;
+    border-radius: 20px;
+}
+
+
+/* body::-webkit-scrollbar-track {
+    background-color: rgb(201, 198, 198);
+    background-color: transparent!important;
+} */
