@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container,Row, Col} from 'react-bootstrap'
-import HeroPic from '../assets/img/hero-img.JPG'
+import HeroPic from '../assets/img/hero-img2.png'
 import CV from '../assets/files/sazon-johnleviticus-cv.pdf'
 import '../styles/Hero.scss'
 import {Button} from 'react-bootstrap'
@@ -9,7 +9,7 @@ import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 const Hero = () => {
   return (
-    <div id="hero">
+    <section id="hero">
       <Container className="hero-section">
         <Row>
 
@@ -18,7 +18,7 @@ const Hero = () => {
               <h2>Hi, I am</h2>
               <h1>John Leviticus Sazon</h1>
               <h4>Full Stack Web Developer</h4>
-              <Button variant="dark" href={CV} download="Sazon-JohnLeviticus-CV.pdf" target="_blank">Download CV</Button>{' '}
+              <Button className="dl-btn" variant="dark" href={CV} download="Sazon-JohnLeviticus-CV.pdf" target="_blank"><span>Download CV</span></Button>{' '}
             </header>
 
             <div className="icons">
@@ -43,7 +43,7 @@ const Hero = () => {
           
         </Row>
       </Container>
-    </div>
+    </section>
   )
 }
 

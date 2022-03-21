@@ -29,3 +29,15 @@ body::-webkit-scrollbar-thumb {
     background-color: rgb(201, 198, 198);
     background-color: transparent!important;
 } */
+
+.section-title {
+    border: 3px double white;
+    width: 15vw!important;
+    height: 6vh;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5%;
+    font-size: 1.5rem;
+}

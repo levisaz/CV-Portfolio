@@ -6,11 +6,12 @@
     .img-holder {
         display: flex;
         justify-content: center;
-        /* margin-top: 1rem; */
+        padding-bottom: 10rem!important;
         img {
             height: auto;
-            width: 80%;
+            width: 75%;
             z-index: 1;
+            border-radius: 45%;
         }
     }
     header {
@@ -24,6 +25,11 @@
             opacity: 50%;
             margin-bottom: 1.5rem;
         }
+        .dl-btn:hover {
+            background-color: rgba(255, 255, 255, 0.966);
+            color: #465486;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
     }
     .icons {
         .icon-holder {
@@ -31,9 +37,46 @@
             color: #a4acc4;
             svg {
                 height: auto;
-                width: 10%;
+                width: 50%;
                 max-height: 53px;
             }
+        }
+        .icon-holder {
+            font-size: 36px;
+            display: inline-block;
+            cursor: pointer;
+            margin: 15px;
+            width: 80px;
+            height: 80px;
+            line-height: 84px;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: 300ms;
+        }
+        .icon-holder:after {
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            content: '';
+            box-sizing: content-box;
+            box-shadow: 0 0 0 3px #fff;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 300ms;
+        }
+        .icon-holder:hover {
+            background-color: rgba(255, 255, 255, 0.966);
+            color: #465486;
+        }
+        .icon-holder:hover:after {
+            opacity: 1;
+            transform: scale(1.15);
         }
     }
 }
