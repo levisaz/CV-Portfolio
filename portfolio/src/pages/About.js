@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/About.scss'
 
-import {Container, Row} from 'react-bootstrap'
+import { Container, Row} from 'react-bootstrap'
 import EducCard from '../components/EducCard'
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
         <Row>
           <div className="section-title"><h2>About Me</h2></div>
         
-          <div className="about-p pt-5"><p>Hi, I am <span className="text-light font-weight-bold">John Leviticus Sazon</span>, 22 years of age, currently residing in Hermosa, Bataan, Philippines. I am a 4th year student at the University of Santo Tomas working towards a Bachelor of Science degree in Information Technology. I am a hardworking and resourceful individual commended for first-rate collaboration and time management abilities. Commited to developing a career path and expanding work experience. Strong knowledge of Web Development</p>
+          <div className="about-p"><p>Hi, I am <span className="text-light font-weight-bold">John Leviticus Sazon</span>, 22 years of age, currently residing in Hermosa, Bataan, Philippines. I am a 4th year student at the University of Santo Tomas working towards a Bachelor of Science degree in Information Technology. I am a hardworking and resourceful individual commended for first-rate collaboration and time management abilities. Commited to developing a career path and expanding work experience. Strong knowledge of Web Development</p>
           </div>
 
           <div className="education row mt-5">
@@ -37,7 +37,7 @@ const About = () => {
                     <EducCard
                       title="TELUS Internation Inc., Philippines (OJT)"
                       subtitle="February 2022 - Present"
-                      text="Full Stack Developer Intern"
+                      text="Telus International Digital Solutions: Full Stack Developer Intern"
                     />
                 </div>
               </div>
@@ -60,7 +60,9 @@ const About = () => {
                     <EducCard
                       title="University of Santo Tomas (College)"
                       subtitle="August 2018 - Present"
-                      text="4th Year Bachelor of Science in Information Technology Student"
+                      text="Bachelor of Science in Information Technology"
+                      text2 = "Dean's Lister 2019 - present"
+
                     />
                 </div>
               </div>

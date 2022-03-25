@@ -9,16 +9,15 @@ const Footer = () => {
     <MDBFooter className="font-small mt-auto py-5">
       <MDBContainer fluid className="text-center">
         <MDBContainer fluid className="icons mb-3">
-          {/* icons */}
-          <a className="icon-holder" href="https://github.com/levisaz" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a className="icon-holder" href="https://github.com/levisaz" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a className="icon-holder" href="https://github.com/levisaz" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
+          <a href="mailto:johnleviticus.sazon@gmail.com?body=Message here" target="_blank" rel="noreferrer" className="icon-holder">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+              <a href="https://github.com/levisaz" target="_blank" rel="noreferrer" className="icon-holder">
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href="https://www.linkedin.com/in/john-leviticus-levi-s-6b0831106/" target="_blank" rel="noreferrer" className="icon-holder">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
           
         </MDBContainer>
       </MDBContainer>

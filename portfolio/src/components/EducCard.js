@@ -11,6 +11,7 @@ const EducCard = (props) => {
         <Card.Text>
             {props.text}
         </Card.Text>
+        
         </Card.Body>
     </Card>
   )
