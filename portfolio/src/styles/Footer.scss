@@ -1,4 +1,52 @@
 footer {
-    /*  */
     background-color: #191c29;
+    min-height: 20vh;
+    .icons {
+        .icon-holder {
+            //margin-right: .5rem;
+            color: #a4acc4;
+            svg {
+                height: auto;
+                width: 50%;
+                //max-height: 53px;
+            }
+        }
+        .icon-holder {
+            font-size: 36px;
+            display: inline-block;
+            cursor: pointer;
+            margin: .5rem;
+            width: 50px;
+            height: 50px;
+            line-height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: 300ms;
+        }
+        .icon-holder:after {
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            content: '';
+            box-sizing: content-box;
+            box-shadow: 0 0 0 3px #fff;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 300ms;
+        }
+        .icon-holder:hover {
+            background-color: rgba(255, 255, 255, 0.966);
+            color: #465486;
+        }
+        .icon-holder:hover:after {
+            opacity: 1;
+            transform: scale(1.15);
+        }
+    }
 }

@@ -17,4 +17,50 @@
             }
         }
     }
+    .education {
+        .exp-title {
+            text-align: left;
+            padding-top: 1.5rem;
+        }
+        .border-right {
+            border-right: 1px solid #a4acc4;
+        }
+        .border {
+            border-color: #a4acc4 !important;
+        }
+        .exp-fill {
+            background-color: #a4acc4!important;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25em 0.4em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .badge-pill {
+            padding-right: 0.6em;
+            padding-left: 0.6em;
+            border-radius: 10rem;
+        }
+        .card {
+            text-align: left;
+            width: 100%;
+            background-color: #10121B;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        .card:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            transform: scale(1.1);
+            margin-left: 2rem;
+        }
+    }
 }

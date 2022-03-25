@@ -29,7 +29,7 @@ const NavBar = () => {
       <Navbar variant="dark" expand="lg" sticky="top" id="navbar" className={`shadow-5-strong ${show && 'navbar__color'}`}>
           <Container className="mx-auto">
             
-            <Navbar.Brand href="/">Brand</Navbar.Brand>
+            <Navbar.Brand href="#hero">Brand</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
