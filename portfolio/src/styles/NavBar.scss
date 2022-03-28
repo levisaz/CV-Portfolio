@@ -2,6 +2,10 @@
     background-color: #10121B;
 }
 
+.nav-link.active {
+    color: #fff!important;
+}
+
 .navbar {
     position: fixed!important;
     top: 0!important;
@@ -9,10 +13,13 @@
     opacity: 80%;
     transition-timing-function: ease-in!important;
     transition: 0.5s;
+    /* .navbar-brand {
+        color: #8d7dff!important;
+    } */
 }
 
 .navbar__color {
-    background-color: #191D2B;
+    background-color: #10121B;
     //top: -50px;
 }
 
@@ -27,7 +34,7 @@
 
 a.active {
     color: #a7d3ff!important;
-    border-bottom: 3px solid #a7d3ff;
+    border-bottom: 3px solid #8d7dff;
 }
 
 

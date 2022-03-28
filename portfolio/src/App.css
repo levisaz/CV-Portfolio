@@ -1,32 +1,18 @@
 /* 
     --bg: #10121B;
-    --sidebar: #191D2B;
-    --main-blue-color: #037FFF;
-    --main-border-color: #2e344e;
-    --font-color: #a4acc4;
+    --font-color: #c9cbdb;
+    button: #7362d5;
+    hover: #8d7dff
  */
 
 
 /* 
- fonts
+ typography
 
  for headings
  font-family: 'Roboto Slab', serif!important;
 
- for long paragraphs
- font-family: 'Open Sans', sans-serif!important;
+ for p tags
+ font-family: 'Roboto', sans-serif;
+ 18px size
  */
-
-
-/* 
-    styles to ba added: 
-
-    scrollbar style
-    footer style
-
-
- */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

@@ -6,7 +6,7 @@ const EducCard = (props) => {
   return (
     <Card className="text-left">
         <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title><img className="logo" src={props.src} alt={props.alt}></img>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{props.subtitle}</Card.Subtitle>
         <Card.Text>
             {props.text}

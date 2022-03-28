@@ -28,7 +28,7 @@ function App() {
           <Footer />
           
         </div>
-        <ScrollToTop smooth />
+        <ScrollToTop smooth top="800" />
     </div>
     
   );

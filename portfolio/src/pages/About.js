@@ -3,6 +3,10 @@ import '../styles/About.scss'
 
 import { Container, Row} from 'react-bootstrap'
 import EducCard from '../components/EducCard'
+import TELUS from '../assets/img/telus.png'
+import UST from '../assets/img/ust-logo.png'
+import JSISF from '../assets/img/jsisf-logo.png'
+
 const About = () => {
   return (
     <section className="" id="about">
@@ -35,6 +39,8 @@ const About = () => {
                 </div>
                 <div className="col py-2">
                     <EducCard
+                      src={TELUS}
+                      alt="TELUS logo"
                       title="TELUS Internation Inc., Philippines (OJT)"
                       subtitle="February 2022 - Present"
                       text="Telus International Digital Solutions: Full Stack Developer Intern"
@@ -58,6 +64,8 @@ const About = () => {
                 </div>
                 <div className="col py-2">
                     <EducCard
+                      src={UST}
+                      alt="UST logo"
                       title="University of Santo Tomas (College)"
                       subtitle="August 2018 - Present"
                       text="Bachelor of Science in Information Technology"
@@ -83,6 +91,8 @@ const About = () => {
                 </div>
                 <div className="col py-2">
                     <EducCard
+                      src={JSISF}
+                      alt="JSISF logo"
                       title="Jesus Saves Integrated School Foundation (Secondary)"
                       subtitle="2010 - 2018"
                       text=""

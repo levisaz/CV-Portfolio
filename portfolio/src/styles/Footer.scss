@@ -23,7 +23,7 @@ footer {
             text-align: center;
             position: relative;
             color: #fff;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: #7362d5;
             transition: 300ms;
         }
         .icon-holder:after {
@@ -41,8 +41,8 @@ footer {
             transition: 300ms;
         }
         .icon-holder:hover {
-            background-color: rgba(255, 255, 255, 0.966);
-            color: #465486;
+            background-color: #8d7dff;
+            //color: #465486;
         }
         .icon-holder:hover:after {
             opacity: 1;

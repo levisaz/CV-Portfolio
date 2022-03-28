@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container,Row, Col} from 'react-bootstrap'
-import HeroPic from '../assets/img/hero-img2.png'
+import HeroPic from '../assets/img/hero-img.png'
 import CV from '../assets/files/sazon-johnleviticus-cv.pdf'
 import '../styles/Hero.scss'
 import {Button} from 'react-bootstrap'
