@@ -16,7 +16,7 @@ const Hero = () => {
           <Col lg="5">
             <header>
               <h2>Hi, I am</h2>
-              <h1>John Leviticus Sazon</h1>
+              <h1>Levi Sazon</h1>
               <h4>Full Stack Web Developer</h4>
               <Button className="dl-btn" variant="dark" href={CV} download="Sazon-JohnLeviticus-CV.pdf" target="_blank"><span>Download CV</span></Button>{' '}
             </header>

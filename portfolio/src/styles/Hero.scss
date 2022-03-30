@@ -42,15 +42,6 @@
     }
     .icons {
         .icon-holder {
-            margin-right: 2rem;
-            color: #E7EFFF;
-            svg {
-                height: auto;
-                width: 50%;
-                max-height: 53px;
-            }
-        }
-        .icon-holder {
             font-size: 36px;
             display: inline-block;
             cursor: pointer;
@@ -60,9 +51,16 @@
             border-radius: 50%;
             text-align: center;
             position: relative;
-            color: #fff;
+            margin-right: 2rem;
+            color: #E7EFFF;
             background-color: #7362d5;
             transition: 300ms;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            svg {
+                height: auto;
+                width: 50%;
+                max-height: 53px;
+            }
         }
         .icon-holder:after {
             pointer-events: none;

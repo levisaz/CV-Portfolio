@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import {Navbar, Container, Nav} from 'react-bootstrap';
-
 import '../styles/NavBar.scss'
 const NavBar = () => {
-  
+  /* useLayoutEffect - search */
   // remove bg on scroll
   const [show, setShow] = useState(true)
   const navControl = () => {
@@ -29,7 +28,7 @@ const NavBar = () => {
       <Navbar variant="dark" expand="lg" sticky="top" id="navbar" className={`shadow-5-strong ${show && 'navbar__color'}`}>
           <Container className="mx-auto">
             
-            <Navbar.Brand href="#hero">Brand</Navbar.Brand>
+            <Navbar.Brand href="#hero">John Leviticus Sazon</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
