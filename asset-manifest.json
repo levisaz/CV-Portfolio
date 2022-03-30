@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/CV-Portfolio/static/css/main.8103d89c.css",
+    "main.js": "/CV-Portfolio/static/js/main.068ed2f2.js",
+    "static/js/787.1ed0c42c.chunk.js": "/CV-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/hero-img.png": "/CV-Portfolio/static/media/hero-img.a6b64935a22239095b60.png",
+    "static/media/ust-logo.png": "/CV-Portfolio/static/media/ust-logo.a0e7490c92b235067bb3.png",
+    "static/media/sazon-johnleviticus-cv.pdf": "/CV-Portfolio/static/media/sazon-johnleviticus-cv.e8ae19b4bee9aa114bd8.pdf",
+    "static/media/telus.png": "/CV-Portfolio/static/media/telus.8b4e02f29e045eb01b01.png",
+    "static/media/jsisf-logo.png": "/CV-Portfolio/static/media/jsisf-logo.1f0508c0bbcc4826cb9e.png",
+    "index.html": "/CV-Portfolio/index.html",
+    "main.8103d89c.css.map": "/CV-Portfolio/static/css/main.8103d89c.css.map",
+    "main.068ed2f2.js.map": "/CV-Portfolio/static/js/main.068ed2f2.js.map",
+    "787.1ed0c42c.chunk.js.map": "/CV-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8103d89c.css",
+    "static/js/main.068ed2f2.js"
+  ]
+}
