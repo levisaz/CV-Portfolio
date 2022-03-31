@@ -7,4 +7,5 @@ Dev Portfolio
     sass
     aos
     fortawesome (fontawesome icons)
+    material ui
 ```
