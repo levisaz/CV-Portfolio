@@ -7,21 +7,23 @@
 }
 
 .navbar {
+    background-color: #262b41;
     position: fixed!important;
     top: 0!important;
     width: 100vw!important;
-    opacity: 80%;
     transition-timing-function: ease-in!important;
-    transition: 0.5s;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-    /* .navbar-brand {
-        //color: #ffffff!important;
-    } */
+    transition: 0.2s;
 }
 
-.navbar__color {
+
+/* .navbar__color {
     background-color: #10121bb0;
+} */
+
+// hide navbar
+.hidden {
+    top: -76px!important;
+    transition: 0.1s ease-out;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -30,7 +32,7 @@
 }
 
 .shadow-5-strong {
-    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 a.active {
@@ -44,7 +46,4 @@ a.active {
 .nav-link:hover {
     color: white !important;
     transform: scale(1.2);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    border: none;
-    border-radius: 15%;
 }

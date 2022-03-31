@@ -1,3 +1,50 @@
 #skills {
     background-color: #10121B;
+    .card,
+    .cardList {
+        display: flex;
+        align-items: center;
+    }
+    .cardList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5%;
+        .card {
+            background: #191D2B;
+            color: #c9cbdb;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #000;
+            //flex: 1 1;
+            justify-content: space-evenly;
+            margin: 1%;
+            max-width: 250px;
+            min-width: 120px;
+            height: auto;
+            img {
+                display: block;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                object-fit: cover;
+                width: auto;
+                height: auto;
+                max-height: 100px;
+                margin: 1rem;
+                border-radius: 15px;
+            }
+            .content-holder {
+                padding: 0;
+                padding-bottom: .7rem;
+                .content {
+                    font-weight: 500;
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+        }
+        .card:hover {
+            transform: scale(1.05);
+            color: #ab9ff1;
+        }
+    }
 }

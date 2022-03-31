@@ -22,7 +22,7 @@ const About = () => {
           <div className="col-12 col-lg-4 exp-title">
             <h3>Experience and Educational Attainment</h3>
           </div>
-            <div className="col-12 col-lg-8">
+            <div className="col-12 col-lg-8 align-center">
               <div className="row educ">
                 <div className="col-auto text-center flex-column d-none d-sm-flex">
                   <div className="row h-50">
