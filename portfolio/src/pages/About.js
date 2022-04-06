@@ -26,15 +26,15 @@ const About = () => {
               <div className="row educ">
                 <div className="col-auto text-center flex-column d-none d-sm-flex">
                   <div className="row h-50">
-                    <div class="col ">&nbsp;</div>
-                    <div class="col ">&nbsp;</div>
+                    <div className="col ">&nbsp;</div>
+                    <div className="col ">&nbsp;</div>
                   </div>
                   <div className="m-2">
-                    <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                    <span className="badge badge-pill border exp-fill">&nbsp;</span>
                   </div>
                   <div className="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col ">&nbsp;</div>
+                    <div className="col border-right">&nbsp;</div>
+                    <div className="col ">&nbsp;</div>
                   </div>
                 </div>
                 <div className="col py-2">
@@ -51,15 +51,15 @@ const About = () => {
               <div className="row educ">
                 <div className="col-auto text-center flex-column d-none d-sm-flex">
                   <div className="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col ">&nbsp;</div>
+                    <div className="col border-right">&nbsp;</div>
+                    <div className="col ">&nbsp;</div>
                   </div>
                   <div className="m-2">
-                    <span class="badge badge-pill border exp-fill">&nbsp;</span>
+                    <span className="badge badge-pill border exp-fill">&nbsp;</span>
                   </div>
                   <div className="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col ">&nbsp;</div>
+                    <div className="col border-right">&nbsp;</div>
+                    <div className="col ">&nbsp;</div>
                   </div>
                 </div>
                 <div className="col py-2">
@@ -78,15 +78,15 @@ const About = () => {
               <div className="row educ">
                 <div className="col-auto text-center flex-column d-none d-sm-flex">
                   <div className="row h-50">
-                    <div class="col border-right">&nbsp;</div>
-                    <div class="col ">&nbsp;</div>
+                    <div className="col border-right">&nbsp;</div>
+                    <div className="col ">&nbsp;</div>
                   </div>
                   <div className="m-2">
-                    <span class="badge badge-pill border ">&nbsp;</span>
+                    <span className="badge badge-pill border ">&nbsp;</span>
                   </div>
                   <div className="row h-50">
-                    <div class="col">&nbsp;</div>
-                    <div class="col ">&nbsp;</div>
+                    <div className="col">&nbsp;</div>
+                    <div className="col ">&nbsp;</div>
                   </div>
                 </div>
                 <div className="col py-2">
