@@ -3,8 +3,7 @@ import {Navbar, Container, Nav} from 'react-bootstrap';
 import '../styles/NavBar.scss'
 const NavBar = () => {
   
-  // remove bg on scroll
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const navControl = () => {
