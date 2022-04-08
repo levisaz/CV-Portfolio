@@ -1,3 +1,45 @@
 #projects {
     background-color: #191c29;
+    .projectList {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        //padding: 5%;
+        .project-card {
+            margin: 2rem;
+            width: 40%;
+            text-align: center;
+            background-color: #10121B;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            -webkit-filter: brightness(100%);
+        }
+        .project-card:hover {
+            //transform: scale(1.1);
+            -webkit-filter: brightness(80%);
+            -webkit-transition: all .2s ease;
+            -moz-transition: all .2s ease;
+            -o-transition: all .2s ease;
+            -ms-transition: all .2s ease;
+            transition: all .2s ease;
+        }
+        .showToggler {
+            .hide {
+                display: none;
+            }
+        }
+    }
+    .btn {
+        background-color: #7362d5;
+        border-color: #7362d5;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    .btn:hover {
+        background-color: #8d7dff;
+        border-color: #8d7dff;
+    }
+}
+
+.section-layout {
+    height: auto!important;
 }
