@@ -1,18 +1,10 @@
 .modal-dialog {
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
     font-family: "Roboto", sans-serif;
     .modal-content {
         width: 50vw;
         color: black !important;
         text-align: justify;
-    }
-    body::-webkit-scrollbar {
-        width: 8px;
-    }
-    body::-webkit-scrollbar-thumb {
-        background-color: #7362d5;
-        border-radius: 20px;
     }
 }
