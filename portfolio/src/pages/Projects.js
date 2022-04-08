@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
 import '../styles/Projects.scss'
+import '../styles/Modal.scss'
 import { Container, Row} from 'react-bootstrap'
 import RespondeCard from '../components/RespondeCard'
 const Projects = () => {
@@ -18,7 +19,7 @@ const Projects = () => {
 
         </Row>
 
-        <Row className="projectList mt-5">
+        <Row className="projectList mt-3">
 
             <RespondeCard />
             <RespondeCard />

@@ -8,6 +8,9 @@ const ProjectCard = (props) => {
         <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>
+            {props.role}
+        </Card.Text>
+        <Card.Text>
             {props.text}
         </Card.Text>
         <Button onClick={props.click}>View</Button>
