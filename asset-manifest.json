@@ -1,11 +1,27 @@
 {
   "files": {
-    "main.css": "/CV-Portfolio/static/css/main.afd8854e.css",
-    "main.js": "/CV-Portfolio/static/js/main.01e60798.js",
+    "main.css": "/CV-Portfolio/static/css/main.8a42fcf2.css",
+    "main.js": "/CV-Portfolio/static/js/main.ce393bd0.js",
     "static/js/787.1ed0c42c.chunk.js": "/CV-Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/hero-img.png": "/CV-Portfolio/static/media/hero-img.a6b64935a22239095b60.png",
+    "static/media/incoming-view.png": "/CV-Portfolio/static/media/incoming-view.25fb59143e9d5611e9f7.png",
+    "static/media/incoming-decline.png": "/CV-Portfolio/static/media/incoming-decline.bc64979108d947a7cef1.png",
+    "static/media/incoming-respond.png": "/CV-Portfolio/static/media/incoming-respond.662600fffd58e84dbda1.png",
+    "static/media/history-view.png": "/CV-Portfolio/static/media/history-view.a0840d9b02bccb9893e1.png",
     "static/media/ust-logo.png": "/CV-Portfolio/static/media/ust-logo.a0e7490c92b235067bb3.png",
+    "static/media/reporthistory.png": "/CV-Portfolio/static/media/reporthistory.2beb16c700f6a2a99b87.png",
+    "static/media/dashboard.png": "/CV-Portfolio/static/media/dashboard.640d0d6fae55c5cb439a.png",
+    "static/media/incomingreport.png": "/CV-Portfolio/static/media/incomingreport.9de2fef58b99bd1eced1.png",
+    "static/media/incident-view.png": "/CV-Portfolio/static/media/incident-view.d806096ee70f953064d2.png",
+    "static/media/incident-new.png": "/CV-Portfolio/static/media/incident-new.8383eebc7827953a9dd4.png",
+    "static/media/incidentreports.png": "/CV-Portfolio/static/media/incidentreports.20afee1fb4705acb81b3.png",
     "static/media/sazon-johnleviticus-cv.pdf": "/CV-Portfolio/static/media/sazon-johnleviticus-cv.e8ae19b4bee9aa114bd8.pdf",
+    "static/media/profile.png": "/CV-Portfolio/static/media/profile.92c485a86a5241fcbe61.png",
+    "static/media/forgot password.png": "/CV-Portfolio/static/media/forgot password.cdb763ba4cb16daff5e3.png",
+    "static/media/login.png": "/CV-Portfolio/static/media/login.1a12d2ccc6faadaa6383.png",
+    "static/media/reset-password.png": "/CV-Portfolio/static/media/reset-password.424bc7d415b7ec297617.png",
+    "static/media/update password.png": "/CV-Portfolio/static/media/update password.a5a7da0da3d725330156.png",
+    "static/media/update email.png": "/CV-Portfolio/static/media/update email.efddfdfa37de8c379072.png",
     "static/media/sass.png": "/CV-Portfolio/static/media/sass.c5da83bb9ff45b84e0e7.png",
     "static/media/telus.png": "/CV-Portfolio/static/media/telus.8b4e02f29e045eb01b01.png",
     "static/media/firebase.png": "/CV-Portfolio/static/media/firebase.6ea3b0b39b97b0e49515.png",
@@ -13,12 +29,12 @@
     "static/media/jsisf-logo.png": "/CV-Portfolio/static/media/jsisf-logo.1f0508c0bbcc4826cb9e.png",
     "static/media/css.png": "/CV-Portfolio/static/media/css.463e319bad8e0edf1ef7.png",
     "index.html": "/CV-Portfolio/index.html",
-    "main.afd8854e.css.map": "/CV-Portfolio/static/css/main.afd8854e.css.map",
-    "main.01e60798.js.map": "/CV-Portfolio/static/js/main.01e60798.js.map",
+    "main.8a42fcf2.css.map": "/CV-Portfolio/static/css/main.8a42fcf2.css.map",
+    "main.ce393bd0.js.map": "/CV-Portfolio/static/js/main.ce393bd0.js.map",
     "787.1ed0c42c.chunk.js.map": "/CV-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.afd8854e.css",
-    "static/js/main.01e60798.js"
+    "static/css/main.8a42fcf2.css",
+    "static/js/main.ce393bd0.js"
   ]
 }
