@@ -10,12 +10,12 @@
             width: 40%;
             text-align: justify;
             background-color: #10121B;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-            -webkit-filter: brightness(100%);
+            box-shadow: 5px 5px 5px #000;
+            -webkit-filter: brightness(90%);
         }
         .project-card:hover {
-            //transform: scale(1.1);
-            -webkit-filter: brightness(80%);
+            transform: scale(1.01);
+            -webkit-filter: brightness(100%);
             -webkit-transition: all .2s ease;
             -moz-transition: all .2s ease;
             -o-transition: all .2s ease;

@@ -26,7 +26,7 @@ const RespondeCard = () => {
             src = {Login}
             title = "Capstone: RESPONDE"
             role="Web Frontend Developer"
-            text = "A web and mobile application (collaborated with web app only). Has login and forgot password functionalities and CRUD functionalities. This app was developed using AngularJS framework for the frontend and backend development, and MongoDB for the database."
+            text = "A web and mobile application (collaborated with web app only) created for the purpose of minimizing the time response of fire fighters. The web app is the admin side that manages the reports that were sent from the mobile application."
             click = {handleShow}
         />
         <Modal size="xl" show={show} onHide={handleShow} >

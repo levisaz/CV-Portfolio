@@ -1,3 +1,12 @@
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
 .App {
     .main-content {
         width: 100%;
@@ -9,6 +18,9 @@
             height: (100vh);
             padding-top: 56px;
             position: relative;
+            @media (max-width: 1200px) {
+                height: auto;
+            }
         }
         .page-footer {
             height: 15vh;
