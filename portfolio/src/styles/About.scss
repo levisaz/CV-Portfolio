@@ -21,6 +21,13 @@
         }
     }
     .education {
+        .educ {
+            >* {
+                >* {
+                    flex-shrink: 1;
+                }
+            }
+        }
         .exp-title {
             text-align: left;
             padding-top: 1.5rem;
