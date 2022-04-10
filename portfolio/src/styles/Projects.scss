@@ -12,6 +12,22 @@
             background-color: #10121B;
             box-shadow: 5px 5px 5px #000;
             -webkit-filter: brightness(90%);
+            .card-img-top {
+                height: auto;
+                width: 100%;
+                max-height: 337px;
+                object-fit: scale-down;
+                padding-top: 1rem;
+            }
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                .btn {
+                    margin-top: auto;
+                    width: 15%;
+                }
+            }
         }
         .project-card:hover {
             transform: scale(1.01);

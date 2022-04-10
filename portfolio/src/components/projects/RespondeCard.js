@@ -1,22 +1,22 @@
 import React, { useState} from 'react'
 import { Button, Modal, Carousel} from 'react-bootstrap'
-import ProjectCard from './ProjectCard'
-import Login from '../assets/img/projects/responde/web/login.png'
-import Dashboard from '../assets/img/projects/responde/web/dashboard.png'
-import Forgot from '../assets/img/projects/responde/web/forgot password.png'
-import Profile from '../assets/img/projects/responde/web/profile.png'
-import UpdateEmail from '../assets/img/projects/responde/web/update email.png'
-import UpdatePass from '../assets/img/projects/responde/web/update password.png'
-import Reset from '../assets/img/projects/responde/web/reset-password.png'
-import Incoming from '../assets/img/projects/responde/web/incomingreport.png'
-import IncomingView from '../assets/img/projects/responde/web/incoming-view.png'
-import IncomingRespond from '../assets/img/projects/responde/web/incoming-respond.png'
-import IncomingDecline from '../assets/img/projects/responde/web/incoming-decline.png'
-import History from '../assets/img/projects/responde/web/reporthistory.png'
-import HistoryView from '../assets/img/projects/responde/web/history-view.png'
-import IncidentNew from '../assets/img/projects/responde/web/incident-new.png'
-import IncidentView from '../assets/img/projects/responde/web/incident-view.png'
-import Incident from '../assets/img/projects/responde/web/incidentreports.png'
+import ProjectCard from '../ProjectCard'
+import Login from '../../assets/img/projects/responde/web/login.png'
+import Dashboard from '../../assets/img/projects/responde/web/dashboard.png'
+import Forgot from '../../assets/img/projects/responde/web/forgot password.png'
+import Profile from '../../assets/img/projects/responde/web/profile.png'
+import UpdateEmail from '../../assets/img/projects/responde/web/update email.png'
+import UpdatePass from '../../assets/img/projects/responde/web/update password.png'
+import Reset from '../../assets/img/projects/responde/web/reset-password.png'
+import Incoming from '../../assets/img/projects/responde/web/incomingreport.png'
+import IncomingView from '../../assets/img/projects/responde/web/incoming-view.png'
+import IncomingRespond from '../../assets/img/projects/responde/web/incoming-respond.png'
+import IncomingDecline from '../../assets/img/projects/responde/web/incoming-decline.png'
+import History from '../../assets/img/projects/responde/web/reporthistory.png'
+import HistoryView from '../../assets/img/projects/responde/web/history-view.png'
+import IncidentNew from '../../assets/img/projects/responde/web/incident-new.png'
+import IncidentView from '../../assets/img/projects/responde/web/incident-view.png'
+import Incident from '../../assets/img/projects/responde/web/incidentreports.png'
 const RespondeCard = () => {
     const [show, setShow] = useState(false);
   const handleShow = () => setShow(!show);
@@ -49,7 +49,7 @@ const RespondeCard = () => {
                     <li>Login/Forgot Password</li>
                     <li>CRUD Functionalities</li>
                     <li>Export data to CSV file</li>
-                    <li>Send sms message after clicking Respond button in the report</li>
+                    <li>Send sms message to registered numbers after clicking Respond button in the report</li>
                 </ul>
                 <hr />
                 <Carousel variant="dark" interval={null} indicators={true}>
@@ -58,112 +58,112 @@ const RespondeCard = () => {
                         <img
                         className="d-block w-100"
                         src={Login}
-                        alt="First slide"
+                        alt="1st slide"
                         />
                         </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={Forgot}
-                        alt="Second slide"
+                        alt="2nd slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={Reset}
-                        alt="Third slide"
+                        alt="3rd slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={Dashboard}
-                        alt="Third slide"
+                        alt="4th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={Profile}
-                        alt="Third slide"
+                        alt="5th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={UpdateEmail}
-                        alt="Third slide"
+                        alt="6th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={UpdatePass}
-                        alt="Third slide"
+                        alt="7th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={Incoming}
-                        alt="Third slide"
+                        alt="8th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={IncomingView}
-                        alt="Third slide"
+                        alt="9th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={IncomingRespond}
-                        alt="Third slide"
+                        alt="10th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={IncomingDecline}
-                        alt="Third slide"
+                        alt="11th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={History}
-                        alt="Third slide"
+                        alt="12th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={HistoryView}
-                        alt="Third slide"
+                        alt="13th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={Incident}
-                        alt="Third slide"
+                        alt="14th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={IncidentView}
-                        alt="Third slide"
+                        alt="15th slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block w-100"
                         src={IncidentNew}
-                        alt="Third slide"
+                        alt="16th slide"
                         />
                     </Carousel.Item>
 

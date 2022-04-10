@@ -2,7 +2,9 @@ import React, { useState} from 'react'
 import '../styles/Projects.scss'
 import '../styles/Modal.scss'
 import { Container, Row} from 'react-bootstrap'
-import RespondeCard from '../components/RespondeCard'
+import RespondeCard from '../components/projects/RespondeCard'
+import KiddieQuizCard from '../components/projects/QuizAppCard'
+import ReactAimCard from '../components/projects/ReactAimCard'
 const Projects = () => {
 
   const [show, setShow] = useState(false)
@@ -22,7 +24,7 @@ const Projects = () => {
         <Row className="projectList mt-3">
 
             <RespondeCard />
-            <RespondeCard />
+            <ReactAimCard />
             
             <div className="showToggler mt-3 d-flex justify-content-center">
               <button className={show? 'hide': "btn mt-3"} onClick={showToggler}>Show All</button>
@@ -31,8 +33,8 @@ const Projects = () => {
             
         {show? 
         <>
-          <RespondeCard />
-          <RespondeCard />
+          <ReactAimCard />
+          <KiddieQuizCard />
           <RespondeCard />
           <RespondeCard />
           
