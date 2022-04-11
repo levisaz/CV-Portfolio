@@ -1,36 +1,44 @@
 import React, { useState} from 'react'
 import { Button, Modal, Carousel} from 'react-bootstrap'
 import ProjectCard from '../ProjectCard'
-import Game from '../../assets/img/projects/react-aim/game.png'
-import GameOver from '../../assets/img/projects/react-aim/gameover.png'
-import Home from '../../assets/img/projects/react-aim/home.png'
+import Home from '../../assets/img/projects/nodejs-blog/home.png'
+import Search from '../../assets/img/projects/nodejs-blog/search.png'
+import View from '../../assets/img/projects/nodejs-blog/view.png'
 
-const ReactAimCard = () => {
+
+const NodeBlogCard = () => {
     const [show, setShow] = useState(false);
   const handleShow = () => setShow(!show);
   return (
     <>
         <ProjectCard 
-            src = {Game}
-            title = "Aim Game"
-            role="Developer"
-            text = "A simple web app game that requires the user to aim and click on the target."
+            src = {Home}
+            title = "Blog Website"
+            role="Full Stack Developer"
+            text = "A blog website with CRUD functionalities."
             click = {handleShow}
         />
         <Modal size="xl" show={show} onHide={handleShow} >
             <Modal.Header closeButton >
-            <Modal.Title>Aim Game</Modal.Title>
+            <Modal.Title>Blog Website</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p>A web application that utilizes ReactJS' useState hook. The user's score will be tallied throughout the game and displayed when the timer ends. HowlerJS is also implemented for the sound effect and background music.</p>
+            <p>A web application that utilizes NodeJS, EJS, and MongoDB. The app has the CRUD functionalities that are tied to the database.</p>
             Technologies:
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>ReactJS</li>
-                    <li>HowlerJS</li>
+                    <li>Bootstrap</li>
+                    <li>NodeJS</li>
+                    <li>Express</li>
+                    <li>EJS</li>
+                    <li>Mongoose</li>
+                    <li>MongoDB</li>
                 </ul> 
-            
+            Features:
+                <ul>
+                    <li>Create, Read, Update, Delete blogs</li>
+                </ul>
                 <hr />
                 <Carousel variant="dark" interval={null} indicators={true}>
 
@@ -44,14 +52,14 @@ const ReactAimCard = () => {
                     <Carousel.Item>
                         <img
                         className="d-block "
-                        src={Game}
+                        src={Search}
                         alt="Second slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block "
-                        src={GameOver}
+                        src={View}
                         alt="Third slide"
                         />
                     </Carousel.Item>
@@ -72,4 +80,4 @@ const ReactAimCard = () => {
   )
 }
 
-export default ReactAimCard
+export default NodeBlogCard

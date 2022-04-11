@@ -5,6 +5,9 @@ import { Container, Row} from 'react-bootstrap'
 import RespondeCard from '../components/projects/RespondeCard'
 import KiddieQuizCard from '../components/projects/QuizAppCard'
 import ReactAimCard from '../components/projects/ReactAimCard'
+import NodeBlogCard from '../components/projects/NodeBlogCard'
+import FigmaHtmlCard from '../components/projects/FigmaHtmlCard'
+import HulyaAndMariasCard from '../components/projects/HulyaAndMariasCard'
 const Projects = () => {
 
   const [show, setShow] = useState(false)
@@ -24,7 +27,7 @@ const Projects = () => {
         <Row className="projectList mt-3">
 
             <RespondeCard />
-            <ReactAimCard />
+            <HulyaAndMariasCard />
             
             <div className="showToggler mt-3 d-flex justify-content-center">
               <button className={show? 'hide': "btn mt-3"} onClick={showToggler}>Show All</button>
@@ -33,10 +36,10 @@ const Projects = () => {
             
         {show? 
         <>
+          <NodeBlogCard />
           <ReactAimCard />
           <KiddieQuizCard />
-          <RespondeCard />
-          <RespondeCard />
+          <FigmaHtmlCard />
           
         
         <div className="showToggler mt-3 d-flex justify-content-center">

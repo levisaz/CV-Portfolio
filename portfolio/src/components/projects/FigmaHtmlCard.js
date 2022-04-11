@@ -1,34 +1,41 @@
 import React, { useState} from 'react'
 import { Button, Modal, Carousel} from 'react-bootstrap'
 import ProjectCard from '../ProjectCard'
-import Game from '../../assets/img/projects/react-aim/game.png'
-import GameOver from '../../assets/img/projects/react-aim/gameover.png'
-import Home from '../../assets/img/projects/react-aim/home.png'
+import Hero from '../../assets/img/projects/figma-html/hero.png'
+import Hero2 from '../../assets/img/projects/figma-html/hero2.png'
+import Services from '../../assets/img/projects/figma-html/services.png'
+import Quote from '../../assets/img/projects/figma-html/quote.png'
+import Footer from '../../assets/img/projects/figma-html/footer.png'
 
-const ReactAimCard = () => {
+
+
+const FigmaHtmlCard = () => {
     const [show, setShow] = useState(false);
   const handleShow = () => setShow(!show);
   return (
     <>
         <ProjectCard 
-            src = {Game}
-            title = "Aim Game"
-            role="Developer"
-            text = "A simple web app game that requires the user to aim and click on the target."
+            src = {Hero}
+            title = "Figma Design to HTML"
+            role="Web Frontend Developer"
+            text = "A project that aims to replicate the figma design into an html static website."
             click = {handleShow}
         />
         <Modal size="xl" show={show} onHide={handleShow} >
             <Modal.Header closeButton >
-            <Modal.Title>Aim Game</Modal.Title>
+            <Modal.Title>Figma Design to HTML</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p>A web application that utilizes ReactJS' useState hook. The user's score will be tallied throughout the game and displayed when the timer ends. HowlerJS is also implemented for the sound effect and background music.</p>
+            <p>A static website that showcases my ability to replicate a design. The website is partially responsive on all devices.
+            <br/>
+
+            <a href="https://www.figma.com/proto/XKKDNFW8YRriskg7LPX6vJ/TELUS?node-id=1%3A430">Figma link</a></p>
+            
             Technologies:
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>ReactJS</li>
-                    <li>HowlerJS</li>
+                    <li>Bootstrap</li>
                 </ul> 
             
                 <hr />
@@ -37,25 +44,38 @@ const ReactAimCard = () => {
                     <Carousel.Item>
                         <img
                         className="d-block "
-                        src={Home}
+                        src={Hero}
                         alt="First slide"
                         />
                         </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block "
-                        src={Game}
+                        src={Hero2}
                         alt="Second slide"
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                         className="d-block "
-                        src={GameOver}
+                        src={Services}
                         alt="Third slide"
                         />
                     </Carousel.Item>
-                    
+                    <Carousel.Item>
+                        <img
+                        className="d-block "
+                        src={Quote}
+                        alt="Fourth slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                        className="d-block "
+                        src={Footer}
+                        alt="Fifth slide"
+                        />
+                    </Carousel.Item>
                     
 
                 </Carousel>
@@ -72,4 +92,4 @@ const ReactAimCard = () => {
   )
 }
 
-export default ReactAimCard
+export default FigmaHtmlCard
