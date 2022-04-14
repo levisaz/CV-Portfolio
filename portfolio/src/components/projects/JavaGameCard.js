@@ -7,27 +7,61 @@ import Game from '../../assets/img/projects/fightingkimmy/game.png'
 import Gameover1 from '../../assets/img/projects/fightingkimmy/gameover1.png'
 import Gameover2 from '../../assets/img/projects/fightingkimmy/gameover2.png'
 
-
+const info = [
+    {
+        src : Game,
+        title : "Greenfoot Game",
+        role:"Developer",
+        text : "A game like Space Impact (mobile game from Nokia) which introduces a character from the mobile game Mobile Legends, Kimmy.",
+        modal_title: "Fighting Kimmy",
+        modal_body: 'Fighting Kimmy is a game developed using Greenfoot API (Java). The project consists of actors, colors, fonts, images, sounds, world, mouseinfo, and userinfo.'
+    }
+]
+const images = [
+    {
+        src: Home,
+        alt: "home img"
+    },
+    {
+        src: How,
+        alt: "How img"
+    },
+    {
+        src: Game,
+        alt: "Game img"
+    },
+    {
+        src: Gameover1,
+        alt: "Gameover1 img"
+    },
+    {
+        src: Gameover2,
+        alt: "Gameover2 img"
+    },
+]
 
 
 const JavaGameCard = () => {
     const [show, setShow] = useState(false);
-  const handleShow = () => setShow(!show);
+    const handleShow = () => setShow(!show);
+
   return (
     <>
+        {info.map(data => (
+            <>
         <ProjectCard 
-            src = {Game}
-            title = "Greenfoot Game"
-            role="Developer"
-            text = "A game like Space Impact (mobile game from Nokia) which introduces a character from the mobile game Mobile Legends, Kimmy."
+            src = {data.src}
+            title = {data.title}
+            role={data.role}
+            text = {data.text}
             click = {handleShow}
         />
         <Modal size="xl" show={show} onHide={handleShow} >
             <Modal.Header closeButton >
-            <Modal.Title>Fighting Kimmy!</Modal.Title>
+            <Modal.Title>{data.modal_title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p>Fighting Kimmy is a game developed using Greenfoot API (Java). The project consists of actors, colors, fonts, images, sounds, world, mouseinfo, and userinfo.</p>
+            <p>{data.modal_body}</p>
             
             Technologies:
                 <ul>
@@ -43,43 +77,18 @@ const JavaGameCard = () => {
                 </ul>
             
                 <hr />
+                
                 <Carousel interval={null} indicators={true}>
 
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Home}
-                        alt="First slide"
-                        />
+                    {images.map(imgs => (
+                        <Carousel.Item>
+                            <img
+                                className="d-block"
+                                src = {imgs.src}
+                                alt = {imgs.alt}
+                            />
                         </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={How}
-                        alt="Second slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Game}
-                        alt="Third slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Gameover1}
-                        alt="Fourth slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Gameover2}
-                        alt="Fifth slide"
-                        />
-                    </Carousel.Item>
+                    ))}
                     
 
                 </Carousel>
@@ -92,7 +101,10 @@ const JavaGameCard = () => {
             
             </Modal.Footer>
         </Modal>
+        </>
+                ))}
     </>
+    
   )
 }
 

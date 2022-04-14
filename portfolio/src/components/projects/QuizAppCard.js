@@ -11,24 +11,81 @@ import Pg7 from '../../assets/img/projects/kiddiequiz/pg7.jpg'
 import Pg8 from '../../assets/img/projects/kiddiequiz/pg8.jpg'
 import Pg9 from '../../assets/img/projects/kiddiequiz/pg9.jpg'
 import Pg10 from '../../assets/img/projects/kiddiequiz/pg10.jpg'
+
+const info = [
+    {
+        src : Pg1,
+        title : "Kiddie Quiz",
+        role:"Developer",
+        text : "A mobile application dedicated to educating children with a quiz. The app contains a variety of categories to choose from.",
+        modal_body: 'The mobile app contains basic onClick functionalities for the quiz and has content management system for creating quiz.'
+    }
+]
+const images = [
+    {
+        src: Pg1,
+        alt: "Pg1 img"
+    },
+    {
+        src: Pg2,
+        alt: "Pg2 img"
+    },
+    {
+        src: Pg3,
+        alt: "Pg3 img"
+    },
+    {
+        src: Pg4,
+        alt: "Pg4 img"
+    },
+    {
+        src: Pg5,
+        alt: "Pg5 img"
+    },
+    {
+        src: Pg6,
+        alt: "Pg6 img"
+    },
+    {
+        src: Pg7,
+        alt: "Pg7 img"
+    },
+    {
+        src: Pg8,
+        alt: "Pg8 img"
+    },
+    {
+        src: Pg9,
+        alt: "Pg9 img"
+    },
+    {
+        src: Pg10,
+        alt: "Pg10 img"
+    },
+    
+]
+
+
 const QuizAppCard = () => {
     const [show, setShow] = useState(false);
   const handleShow = () => setShow(!show);
   return (
     <>
+        {info.map(data => (
+            <>
         <ProjectCard 
-            src = {Pg1}
-            title = "Kiddie Quiz"
-            role="Developer"
-            text = "A mobile application dedicated to educating children with a quiz. The app contains a variety of categories to choose from."
+            src = {data.src}
+            title = {data.title}
+            role={data.role}
+            text = {data.text}
             click = {handleShow}
         />
         <Modal size="xl" show={show} onHide={handleShow} >
             <Modal.Header closeButton >
-            <Modal.Title>Kiddie Quiz</Modal.Title>
+            <Modal.Title>{data.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p>The mobile app contains basic onClick functionalities for the quiz and has content management system for creating quiz.</p>
+            <p>{data.modal_body}</p>
             Technologies:
                 <ul>
                     <li>Java</li>
@@ -43,76 +100,15 @@ const QuizAppCard = () => {
                 <hr />
                 <Carousel variant="dark" interval={null} indicators={true}>
 
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg1}
-                        alt="First slide"
-                        />
+                {images.map(imgs => (
+                        <Carousel.Item>
+                            <img
+                                className="d-block"
+                                src = {imgs.src}
+                                alt = {imgs.alt}
+                            />
                         </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg2}
-                        alt="Second slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg3}
-                        alt="Third slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg4}
-                        alt="Fourth slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg5}
-                        alt="Fifth slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg6}
-                        alt="Sixth slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg7}
-                        alt="Seventh slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg8}
-                        alt="Eighth slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg9}
-                        alt="Ninth slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Pg10}
-                        alt="Tenth slide"
-                        />
-                    </Carousel.Item>
+                    ))}
                     
 
                 </Carousel>
@@ -125,6 +121,8 @@ const QuizAppCard = () => {
             
             </Modal.Footer>
         </Modal>
+        </>
+        ))}
     </>
   )
 }

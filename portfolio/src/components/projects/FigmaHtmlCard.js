@@ -7,26 +7,58 @@ import Services from '../../assets/img/projects/figma-html/services.png'
 import Quote from '../../assets/img/projects/figma-html/quote.png'
 import Footer from '../../assets/img/projects/figma-html/footer.png'
 
-
+const info = [
+    {
+        src : Hero,
+        title : "Figma Design to HTML",
+        role:"Web Frontend Developer",
+        text : "A project that aims to replicate the figma design into an html static website.",
+        modal_body: 'A static website that showcases my ability to replicate a design. The website is partially responsive on all devices.'
+    }
+]
+const images = [
+    {
+        src: Hero,
+        alt: "Hero img"
+    },
+    {
+        src: Hero2,
+        alt: "Hero2 img"
+    },
+    {
+        src: Services,
+        alt: "Services img"
+    },
+    {
+        src: Quote,
+        alt: "Quote img"
+    },
+    {
+        src: Footer,
+        alt: "Footer img"
+    },
+]
 
 const FigmaHtmlCard = () => {
     const [show, setShow] = useState(false);
   const handleShow = () => setShow(!show);
   return (
     <>
+        {info.map(data => (
+            <>
         <ProjectCard 
-            src = {Hero}
-            title = "Figma Design to HTML"
-            role="Web Frontend Developer"
-            text = "A project that aims to replicate the figma design into an html static website."
+            src = {data.src}
+            title = {data.title}
+            role={data.role}
+            text = {data.text}
             click = {handleShow}
         />
         <Modal size="xl" show={show} onHide={handleShow} >
             <Modal.Header closeButton >
-            <Modal.Title>Figma Design to HTML</Modal.Title>
+            <Modal.Title>{data.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p>A static website that showcases my ability to replicate a design. The website is partially responsive on all devices.
+            <p>{data.modal_body}
             <br/>
 
             <a href="https://www.figma.com/proto/XKKDNFW8YRriskg7LPX6vJ/TELUS?node-id=1%3A430">Figma link</a></p>
@@ -41,41 +73,15 @@ const FigmaHtmlCard = () => {
                 <hr />
                 <Carousel variant="dark" interval={null} indicators={true}>
 
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Hero}
-                        alt="First slide"
-                        />
+                {images.map(imgs => (
+                        <Carousel.Item>
+                            <img
+                                className="d-block"
+                                src = {imgs.src}
+                                alt = {imgs.alt}
+                            />
                         </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Hero2}
-                        alt="Second slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Services}
-                        alt="Third slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Quote}
-                        alt="Fourth slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block "
-                        src={Footer}
-                        alt="Fifth slide"
-                        />
-                    </Carousel.Item>
+                    ))}
                     
 
                 </Carousel>
@@ -88,6 +94,8 @@ const FigmaHtmlCard = () => {
             
             </Modal.Footer>
         </Modal>
+        </>
+        ))}
     </>
   )
 }

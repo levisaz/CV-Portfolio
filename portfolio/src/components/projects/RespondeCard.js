@@ -17,24 +17,103 @@ import HistoryView from '../../assets/img/projects/responde/web/history-view.png
 import IncidentNew from '../../assets/img/projects/responde/web/incident-new.png'
 import IncidentView from '../../assets/img/projects/responde/web/incident-view.png'
 import Incident from '../../assets/img/projects/responde/web/incidentreports.png'
+
+const info = [
+    {
+        src : Login,
+        title : "Capstone: RESPONDE",
+        role:"Web Frontend Developer",
+        text : "A web and mobile application (collaborated with web app only) created for the purpose of minimizing the time response of fire fighters. The web app is the admin side that manages the reports that were sent from the mobile application.",
+        modal_body: 'The web application is used to manage incoming reports and has the option to mark them responded or not. The admin can also create a report by exporting single or group reports to csv file.'
+    }
+]
+const images = [
+    {
+        src: Login,
+        alt: "Login img"
+    },
+    {
+        src: Dashboard,
+        alt: "Dashboard img"
+    },
+    {
+        src: Forgot,
+        alt: "Forgot img"
+    },
+    {
+        src: Profile,
+        alt: "Profile img"
+    },
+    {
+        src: UpdateEmail,
+        alt: "UpdateEmail img"
+    },
+    {
+        src: UpdatePass,
+        alt: "UpdatePass img"
+    },
+    {
+        src: Reset,
+        alt: "Reset img"
+    },
+    {
+        src: Incoming,
+        alt: "Incoming img"
+    },
+    {
+        src: IncomingView,
+        alt: "IncomingView img"
+    },
+    {
+        src: IncomingRespond,
+        alt: "IncomingRespond img"
+    },
+    {
+        src: IncomingDecline,
+        alt: "IncomingDecline img"
+    },
+    {
+        src: History,
+        alt: "History img"
+    },
+    {
+        src: HistoryView,
+        alt: "HistoryView img"
+    },
+    {
+        src: IncidentNew,
+        alt: "IncidentNew img"
+    },
+    {
+        src: IncidentView,
+        alt: "IncidentView img"
+    },
+    {
+        src: Incident,
+        alt: "Incident img"
+    },
+]
+
 const RespondeCard = () => {
     const [show, setShow] = useState(false);
   const handleShow = () => setShow(!show);
   return (
     <>
+        {info.map(data => (
+            <>
         <ProjectCard 
-            src = {Login}
-            title = "Capstone: RESPONDE"
-            role="Web Frontend Developer"
-            text = "A web and mobile application (collaborated with web app only) created for the purpose of minimizing the time response of fire fighters. The web app is the admin side that manages the reports that were sent from the mobile application."
+            src = {data.src}
+            title = {data.title}
+            role={data.role}
+            text = {data.text}
             click = {handleShow}
         />
         <Modal size="xl" show={show} onHide={handleShow} >
             <Modal.Header closeButton >
-            <Modal.Title>Capstone: RESPONDE</Modal.Title>
+            <Modal.Title>{data.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <p>The web application is used to manage incoming reports and has the option to mark them responded or not. The admin can also create a report by exporting single or group reports to csv file.</p>
+            <p>{data.modal_body}</p>
             Technologies:
                 <ul>
                     <li>HTML</li>
@@ -54,118 +133,15 @@ const RespondeCard = () => {
                 <hr />
                 <Carousel variant="dark" interval={null} indicators={true}>
 
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Login}
-                        alt="1st slide"
-                        />
+                {images.map(imgs => (
+                        <Carousel.Item>
+                            <img
+                                className="d-block"
+                                src = {imgs.src}
+                                alt = {imgs.alt}
+                            />
                         </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Forgot}
-                        alt="2nd slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Reset}
-                        alt="3rd slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Dashboard}
-                        alt="4th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Profile}
-                        alt="5th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={UpdateEmail}
-                        alt="6th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={UpdatePass}
-                        alt="7th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Incoming}
-                        alt="8th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={IncomingView}
-                        alt="9th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={IncomingRespond}
-                        alt="10th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={IncomingDecline}
-                        alt="11th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={History}
-                        alt="12th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={HistoryView}
-                        alt="13th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={Incident}
-                        alt="14th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={IncidentView}
-                        alt="15th slide"
-                        />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                        className="d-block w-100"
-                        src={IncidentNew}
-                        alt="16th slide"
-                        />
-                    </Carousel.Item>
+                    ))}
 
                 </Carousel>
 
@@ -177,6 +153,8 @@ const RespondeCard = () => {
             
             </Modal.Footer>
         </Modal>
+        </>
+                ))}
     </>
   )
 }
