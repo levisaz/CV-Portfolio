@@ -8,6 +8,7 @@ import ReactAimCard from '../components/projects/ReactAimCard'
 import NodeBlogCard from '../components/projects/NodeBlogCard'
 import FigmaHtmlCard from '../components/projects/FigmaHtmlCard'
 import HulyaAndMariasCard from '../components/projects/HulyaAndMariasCard'
+import JavaGameCard from '../components/projects/JavaGameCard'
 const Projects = () => {
 
   const [show, setShow] = useState(false)
@@ -40,6 +41,7 @@ const Projects = () => {
           <ReactAimCard />
           <KiddieQuizCard />
           <FigmaHtmlCard />
+          <JavaGameCard />
           
         
         <div className="showToggler mt-3 d-flex justify-content-center">
