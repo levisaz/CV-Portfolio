@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import {Navbar, Container, Nav} from 'react-bootstrap';
 import '../styles/NavBar.scss'
-const NavBar = () => {
+import DarkModeToggle from "react-dark-mode-toggle";
+
+const NavBar = ({theme, setTheme}) => {
   
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  
+  
 
   const navControl = () => {
     
@@ -51,7 +55,12 @@ const NavBar = () => {
                 <Nav.Link href="#skills" className={`${show}`}>Skills</Nav.Link>
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
-                
+                <DarkModeToggle
+                  onChange={() => setTheme(!theme)}
+                  checked={theme}
+                  size={50}
+                  className="theme-toggler"
+                />
               </Nav>
             </Navbar.Collapse>
           </Container>

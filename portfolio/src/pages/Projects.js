@@ -31,7 +31,7 @@ const Projects = () => {
             <HulyaAndMariasCard />
             
             <div className="showToggler mt-3 d-flex justify-content-center">
-              <button className={show? 'hide': "btn mt-3"} onClick={showToggler}>Show All</button>
+              <button className={show? 'hide': "btn mt-3 mb-5"} onClick={showToggler}>Show All</button>
             </div>
 
             

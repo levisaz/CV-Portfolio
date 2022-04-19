@@ -1,3 +1,35 @@
 #contact {
     background-color: #10121B;
+    .contact-form {
+        border: 1px solid #c9cbdb;
+        border-radius: 15px;
+        padding: 5%;
+        width: 50%;
+        input[type="email"],
+        input[type="text"],
+        textarea[type="text"] {
+            font-family: "Roboto", sans-serif;
+            color: #c9cbdb;
+        }
+        .form-control {
+            background: none;
+            font-family: "Roboto", sans-serif;
+            border: none;
+            border-radius: 0;
+            border-bottom: 2px solid #c9cbdb;
+        }
+        .form-control:focus {
+            border-color: inherit;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .btn {
+            background-color: #7362d5;
+            border-color: #7362d5;
+        }
+        .btn:hover {
+            background-color: #8d7dff;
+            border-color: #8d7dff;
+        }
+    }
 }
