@@ -15,7 +15,68 @@ import SASS from '../assets/img/skills/sass.png'
 import MONGODB from '../assets/img/skills/mongodb.png'
 import FIREBASE from '../assets/img/skills/firebase.png'
 import ANGULAR from '../assets/img/skills/angular.png'
+import JAVA from '../assets/img/skills/java.png'
 const Skills = () => {
+
+  const skills = [
+    {
+      image: HTML,
+      alt: "Html 5 logo",
+      title: "HTML"
+    },
+    {
+      image: CSS,
+      alt: "CSS logo",
+      title: "CSS"
+    },
+    {
+      image: JS,
+      alt: "JS logo",
+      title: "JAVASCRIPT"
+    },
+    {
+      image: BOOTSTRAP,
+      alt: "BOOTSTRAP logo",
+      title: "BOOTSTRAP"
+    },
+    {
+      image: SASS,
+      alt: "SASS logo",
+      title: "SASS"
+    },
+    {
+      image: REACT,
+      alt: "REACT logo",
+      title: "REACT"
+    },
+    {
+      image: ANGULAR,
+      alt: "ANGULAR logo",
+      title: "ANGULAR"
+    },
+    {
+      image: NODE,
+      alt: "NODE logo",
+      title: "NODE"
+    },
+    {
+      image: JAVA,
+      alt: "JAVA logo",
+      title: "JAVA"
+    },
+    {
+      image: MONGODB,
+      alt: "MONGODB logo",
+      title: "MONGODB"
+    },
+    {
+      image: FIREBASE,
+      alt: "FIREBASE logo",
+      title: "FIREBASE"
+    },
+
+  ]
+
   return (
     <section id="skills">
       <Container className="skills-section">
@@ -25,136 +86,22 @@ const Skills = () => {
 
           <Row className="cardList">
           
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={HTML}
-                alt="Html 5 logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  HTML
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={CSS}
-                alt="CSS logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  CSS
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={JS}
-                alt="JS logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  JS
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={BOOTSTRAP}
-                alt="BOOTSTRAP logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  BOOTSTRAP
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={SASS}
-                alt="SASS logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  SASS
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={REACT}
-                alt="REACT logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  REACT
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={ANGULAR}
-                alt="ANGULAR logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  ANGULAR
-                </Typography>
-              </CardContent>
-            </Card>
-            
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={NODE}
-                alt="NODEJS logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  NODEJS
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={MONGODB}
-                alt="MONGODB logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  MONGODB
-                </Typography>
-              </CardContent>
-            </Card>
-
-            <Card sx={{ maxWidth: 345 }} className="card">
-              <CardMedia
-                component="img"
-                image={FIREBASE}
-                alt="FIREBASE logo"
-              />
-              <CardContent className="content-holder">
-                <Typography variant="h5" component="div" className="content">
-                  FIREBASE
-                </Typography>
-              </CardContent>
-            </Card>
-
+            {skills.map((data) => (
+              <>
+                <Card sx={{ maxWidth: 345 }} className="card">
+                  <CardMedia
+                    component="img"
+                    image={data.image}
+                    alt={data.alt}
+                  />
+                  <CardContent className="content-holder">
+                    <Typography variant="h5" component="div" className="content">
+                      {data.title}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </>
+            ))}
 
 
           </Row>
