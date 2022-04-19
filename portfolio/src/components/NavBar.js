@@ -7,8 +7,11 @@ const NavBar = ({theme, setTheme}) => {
   
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
-  
-  
+  const [navExpanded, setNavExpanded] = useState(false);
+
+  const toggleNav = () => {
+    setNavExpanded(!navExpanded);
+  }
 
   const navControl = () => {
     
@@ -42,13 +45,15 @@ const NavBar = ({theme, setTheme}) => {
   return (
     
     <>
-      <Navbar variant="dark" expand="lg" sticky="top" id="navbar" className={`shadow-5-strong active ${show && 'hidden'}`}>
+      <Navbar variant="dark" expand="lg" sticky="top" id="navbar" className={`shadow-5-strong active ${show && 'hidden'}`}
+      onToggle={toggleNav}
+      expanded={navExpanded}>
           <Container className="mx-auto">
             
             <Navbar.Brand href="#hero">John Leviticus Sazon</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto">
+              <Nav className="ms-auto" onSelect={toggleNav}>
               
                 <Nav.Link href="#hero">Home</Nav.Link>
                 <Nav.Link href="#about">About</Nav.Link>
