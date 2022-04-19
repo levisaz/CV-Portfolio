@@ -79,7 +79,7 @@ const Skills = () => {
 
   return (
     <section id="skills">
-      <Container className="skills-section">
+      <Container fluid="xl" className="skills-section">
 
         <Row className="d-flex justify-content-center">
           <div className="section-title"><h2>Skills</h2></div>

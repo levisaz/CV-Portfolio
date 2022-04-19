@@ -13,6 +13,13 @@ const Hero = () => {
       <Container className="hero-section">
         <Row>
 
+          
+
+          <Col lg="7">
+            <div className="img-holder">
+              <img src={HeroPic} alt="levi sazon img" />
+            </div>
+          </Col>
           <Col lg="5">
             <header>
               <h2>Hi, I am</h2>
@@ -34,13 +41,6 @@ const Hero = () => {
               
             </div>
           </Col>
-
-          <Col lg="7">
-            <div className="img-holder">
-              <img src={HeroPic} alt="levi sazon img" />
-            </div>
-          </Col>
-          
         </Row>
       </Container>
     </section>

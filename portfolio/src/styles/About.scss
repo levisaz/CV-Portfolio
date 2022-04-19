@@ -85,3 +85,31 @@
         }
     }
 }
+
+@media (max-width: 575.98px) {
+    #about {
+        .about-section {
+            padding: 2rem!important;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    #about {
+        .about-section {
+            padding: 3rem;
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    #about {
+        .about-section {
+            .about-p {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

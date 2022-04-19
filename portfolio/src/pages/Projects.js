@@ -39,10 +39,9 @@ const Projects = () => {
         <>
           <NodeBlogCard />
           <ReactAimCard />
-          <KiddieQuizCard />
           <FigmaHtmlCard />
           <JavaGameCard />
-          
+          <KiddieQuizCard />
         
         <div className="showToggler mt-3 d-flex justify-content-center">
         <button className="btn mb-5" onClick={showToggler}>See Less</button>

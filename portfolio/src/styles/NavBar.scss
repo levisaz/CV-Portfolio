@@ -55,3 +55,15 @@ a.active {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+@media (max-width: 991.98px) {
+    a.active {
+        border-bottom: none;
+    }
+    .nav-link:hover {
+        transform: none;
+    }
+    .nav-link {
+        margin-left: 0!important;
+    }
+}

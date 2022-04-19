@@ -10,7 +10,7 @@ import JSISF from '../assets/img/jsisf-logo.png'
 const About = () => {
   return (
     <section className="" id="about">
-      <Container className="about-section d-flex justify-content-center">
+      <Container fluid="md" className="about-section d-flex justify-content-center">
         <Row>
           <div className="section-title"><h2>About Me</h2></div>
         
@@ -68,8 +68,8 @@ const About = () => {
                       alt="UST logo"
                       title="University of Santo Tomas (College)"
                       subtitle="August 2018 - Present"
-                      text="Bachelor of Science in Information Technology"
-                      text2 = "Dean's Lister 2019 - present"
+                      text="Bachelor of Science in Information Technology: Web and Mobile App Development"
+                      text2 = "Dean's Lister (2019 - present)"
 
                     />
                 </div>
@@ -95,7 +95,7 @@ const About = () => {
                       alt="JSISF logo"
                       title="Jesus Saves Integrated School Foundation (Secondary)"
                       subtitle="2010 - 2018"
-                      text=""
+                      text="Consistent Honors"
                     />
                 </div>
               </div>

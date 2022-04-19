@@ -6,7 +6,7 @@ import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 const Footer = () => {
   return (
-    <MDBFooter className="font-small mt-auto py-5">
+    <MDBFooter className="font-small mt-auto">
       <MDBContainer fluid className="text-center">
         <MDBContainer fluid className="icons mb-3">
           <a href="mailto:johnleviticus.sazon@gmail.com?body=Message here" target="_blank" rel="noreferrer" className="icon-holder">

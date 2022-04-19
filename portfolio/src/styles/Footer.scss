@@ -1,6 +1,8 @@
 footer {
     background-color: #191c29;
     min-height: 20vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     .icons {
         .icon-holder {
             //margin-right: .5rem;
@@ -47,6 +49,26 @@ footer {
         .icon-holder:hover:after {
             opacity: 1;
             transform: scale(1.15);
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .App {
+        .main-content {
+            .page-footer {
+                padding-bottom: 0!important;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .App {
+        .main-content {
+            .page-footer {
+                padding-top: 30px!important;
+            }
         }
     }
 }
