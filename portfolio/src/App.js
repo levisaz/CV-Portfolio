@@ -12,8 +12,12 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 /* import DarkModeToggle from "react-dark-mode-toggle"; */
 import ScrollToTop from "react-scroll-to-top";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
+  AOS.init();
   return (
     
       <div className={isDarkMode ? "App" : "App try"}>
@@ -24,8 +28,8 @@ function App() {
         
         <div className="main-content">
           
-          <Hero />
-          <About />
+          <Hero  />
+          <About data-aos="zoom-in-up" />
           <Skills />
           <Projects />
           <Contact />

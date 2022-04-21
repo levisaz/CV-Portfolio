@@ -10,7 +10,7 @@ import JSISF from '../assets/img/jsisf-logo.png'
 const About = () => {
   return (
     <section className="" id="about">
-      <Container fluid="md" className="about-section d-flex justify-content-center">
+      <Container data-aos="zoom-in" fluid="md" className="about-section d-flex justify-content-center">
         <Row>
           <div className="section-title text-center"><h2>About Me</h2></div>
         

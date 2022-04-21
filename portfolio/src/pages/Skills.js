@@ -78,8 +78,8 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills">
-      <Container fluid="xl" className="skills-section">
+    <section id="skills" >
+      <Container data-aos="zoom-in" fluid="xl" className="skills-section">
 
         <Row className="d-flex justify-content-center">
           <div className="section-title"><h2>Skills</h2></div>

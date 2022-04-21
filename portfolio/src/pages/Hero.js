@@ -10,7 +10,7 @@ import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 const Hero = () => {
   return (
     <section id="hero">
-      <Container className="hero-section">
+      <Container data-aos="zoom-in" data-aos-duration="3000" className="hero-section">
         <Row>
 
           

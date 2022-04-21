@@ -19,7 +19,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className={show ? 'section-layout' : null}>
-    <Container fluid className='project-section'>
+    <Container data-aos="zoom-in" fluid className='project-section'>
         <Row>
           <div className="section-title"><h2>Projects</h2></div>
 
