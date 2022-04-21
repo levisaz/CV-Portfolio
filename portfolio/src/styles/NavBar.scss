@@ -49,6 +49,35 @@ a.active {
 }
 
 
+/* stroke */
+
+nav.stroke .nav-link {
+    position: relative;
+}
+
+nav.stroke .nav-link:after {
+    transition: all .5s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+nav.stroke .nav-link:hover:after {
+    width: 100%;
+}
+
+nav.stroke .nav-link.active:hover:after {
+    width: 0%;
+}
+
+
 /* theme */
 
 .theme-toggler {

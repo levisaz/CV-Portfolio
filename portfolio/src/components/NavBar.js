@@ -45,7 +45,7 @@ const NavBar = ({theme, setTheme}) => {
   return (
     
     <>
-      <Navbar variant="dark" expand="lg" sticky="top" id="navbar" className={`shadow-5-strong active ${show && 'hidden'}`}
+      <Navbar variant="dark" expand="lg" sticky="top" id="navbar" className={`shadow-5-strong active stroke ${show && 'hidden'}`}
       onToggle={toggleNav}
       expanded={navExpanded}>
           <Container className="mx-auto">

@@ -1,4 +1,5 @@
 import './App.scss';
+import './styles/LightTheme.scss';
 import React, {useState} from 'react'
 
 /* components */

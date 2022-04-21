@@ -1,0 +1,95 @@
+/* light theme */
+
+.try {
+    background-color: #c9cbdb!important;
+    .navbar {
+        background-color: white;
+        color: #10121B!important;
+        border: none;
+        .navbar-nav {
+            .nav-link.active {
+                color: #10121ba4!important;
+            }
+            .nav-link:hover {
+                color: #090a0f!important;
+                //background-color: grey;
+            }
+        }
+    }
+    .navbar-dark {
+        .navbar-brand:hover {
+            color: #090a0f!important;
+        }
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #10121B;
+        }
+        .navbar-toggler {
+            color: rgba(0, 0, 0, .55);
+            border-color: rgba(0, 0, 0, .1);
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280, 0, 0, 0.55%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+        }
+    }
+    .main-content {
+        >* {
+            transition: all .5s ease;
+            background-color: #c9cbdb!important;
+            color: #10121B;
+            border-top: 1px solid #10121B;
+        }
+        .hero-section {
+            h1,
+            h2,
+            h4 {
+                text-shadow: none;
+            }
+        }
+    }
+    .section-title {
+        background-color: white;
+        >* {
+            text-shadow: none;
+        }
+    }
+    #hero {
+        border: none;
+        .btn-dark {
+            border: none;
+        }
+    }
+    #about {
+        .education {
+            .card {
+                background-color: white;
+            }
+        }
+    }
+    #skills {
+        .cardList .card {
+            background-color: white;
+            color: #10121B;
+        }
+        .cardList .card:hover {
+            color: #7362d5;
+        }
+    }
+    #projects {
+        .projectList .project-card {
+            background-color: white;
+            color: #10121B;
+        }
+    }
+    #contact {
+        .contact-form {
+            border: 1px solid #10121B;
+            .form-control {
+                border-bottom: 2px solid #10121B;
+            }
+        }
+    }
+    footer {
+        border-top: 1px solid #10121B;
+    }
+}
