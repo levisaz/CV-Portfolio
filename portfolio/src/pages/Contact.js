@@ -37,7 +37,7 @@ const Contact = () => {
       <Container data-aos="zoom-in" className="about-section d-flex justify-content-center flex-column">
         <Row>
         <div className="section-title text-center"><h2>Contact Me</h2></div>
-        <p className="d-flex justify-content-center mt-5">Any questions or remarks? Just write me a message!</p>
+        <p className="d-flex justify-content-center mt-5 text-center">Any questions or remarks? Just write me a message!</p>
         </Row>
 
         <Row className="mt-3 mb-5 justify-content-center">
