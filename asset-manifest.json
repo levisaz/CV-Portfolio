@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CV-Portfolio/static/css/main.c82e30c5.css",
-    "main.js": "/CV-Portfolio/static/js/main.28405ad5.js",
+    "main.css": "/CV-Portfolio/static/css/main.b083ce83.css",
+    "main.js": "/CV-Portfolio/static/js/main.b18cb0de.js",
     "static/js/787.1ed0c42c.chunk.js": "/CV-Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/hero-img.png": "/CV-Portfolio/static/media/hero-img.a6b64935a22239095b60.png",
     "static/media/hero.png": "/CV-Portfolio/static/media/hero.5a5d97d751923deee84d.png",
@@ -62,12 +62,12 @@
     "static/media/css.png": "/CV-Portfolio/static/media/css.463e319bad8e0edf1ef7.png",
     "static/media/java.png": "/CV-Portfolio/static/media/java.6c64373d3b7415758078.png",
     "index.html": "/CV-Portfolio/index.html",
-    "main.c82e30c5.css.map": "/CV-Portfolio/static/css/main.c82e30c5.css.map",
-    "main.28405ad5.js.map": "/CV-Portfolio/static/js/main.28405ad5.js.map",
+    "main.b083ce83.css.map": "/CV-Portfolio/static/css/main.b083ce83.css.map",
+    "main.b18cb0de.js.map": "/CV-Portfolio/static/js/main.b18cb0de.js.map",
     "787.1ed0c42c.chunk.js.map": "/CV-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c82e30c5.css",
-    "static/js/main.28405ad5.js"
+    "static/css/main.b083ce83.css",
+    "static/js/main.b18cb0de.js"
   ]
 }
