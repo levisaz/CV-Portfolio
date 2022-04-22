@@ -20,7 +20,7 @@ function App() {
   AOS.init();
   return (
     
-      <div className={isDarkMode ? "App" : "App try"}>
+      <div className={isDarkMode ? "App" : "App light-mode"}>
         <NavBar
           theme = {isDarkMode}
           setTheme = {setIsDarkMode}

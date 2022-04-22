@@ -1,6 +1,6 @@
 /* light theme */
 
-.try {
+.light-mode {
     .main-content {
         >* {
             transition: all .5s ease;
@@ -92,6 +92,12 @@
             .form-control {
                 border-bottom: 2px solid #10121B;
             }
+        }
+    }
+    .modal-dialog {
+        .modal-content {
+            background-color: #fff!important;
+            color: #10121B;
         }
     }
     footer {
