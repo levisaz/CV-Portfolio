@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CV-Portfolio/static/css/main.b083ce83.css",
-    "main.js": "/CV-Portfolio/static/js/main.224b93b5.js",
+    "main.css": "/CV-Portfolio/static/css/main.a783d270.css",
+    "main.js": "/CV-Portfolio/static/js/main.f60eab55.js",
     "static/js/787.1ed0c42c.chunk.js": "/CV-Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/hero-img.png": "/CV-Portfolio/static/media/hero-img.a6b64935a22239095b60.png",
     "static/media/hero.png": "/CV-Portfolio/static/media/hero.5a5d97d751923deee84d.png",
@@ -30,19 +30,19 @@
     "static/media/pg6.jpg": "/CV-Portfolio/static/media/pg6.d6b4c259f44e088c2f7e.jpg",
     "static/media/pg4.jpg": "/CV-Portfolio/static/media/pg4.4c8105989753b6a15440.jpg",
     "static/media/pg8.jpg": "/CV-Portfolio/static/media/pg8.95e904b769cb8ff649af.jpg",
-    "static/media/sazon-johnleviticus-cv.pdf": "/CV-Portfolio/static/media/sazon-johnleviticus-cv.8cdb0a0a4aa3f4cd042d.pdf",
     "static/media/pg5.jpg": "/CV-Portfolio/static/media/pg5.a6abaae2cbacff2aa7fd.jpg",
     "static/media/pg9.jpg": "/CV-Portfolio/static/media/pg9.6c2cdd365b0a6538b88b.jpg",
     "static/media/incidentreports.png": "/CV-Portfolio/static/media/incidentreports.20afee1fb4705acb81b3.png",
     "static/media/pg7.jpg": "/CV-Portfolio/static/media/pg7.cb00c00e0a185c1f9d39.jpg",
     "static/media/how.png": "/CV-Portfolio/static/media/how.1e28cee4d9e4948d709f.png",
     "static/media/userorder-email.png": "/CV-Portfolio/static/media/userorder-email.2f48ad59481c4a538ba5.png",
+    "static/media/sazon-johnleviticus-cv.pdf": "/CV-Portfolio/static/media/sazon-johnleviticus-cv.3954ba663d0ae9f53c3b.pdf",
     "static/media/admin-email.png": "/CV-Portfolio/static/media/admin-email.470abc3c4b4ed3af72b6.png",
     "static/media/view.png": "/CV-Portfolio/static/media/view.6c7f29d21030b64150f1.png",
     "static/media/profile.png": "/CV-Portfolio/static/media/profile.92c485a86a5241fcbe61.png",
     "static/media/forgot password.png": "/CV-Portfolio/static/media/forgot password.cdb763ba4cb16daff5e3.png",
     "static/media/products.png": "/CV-Portfolio/static/media/products.ee243499838ec90faeac.png",
-    "static/media/login.png": "/CV-Portfolio/static/media/login.54065d5bcc8d8a742c79.png",
+    "static/media/login.png": "/CV-Portfolio/static/media/login.d37775335650c37b5219.png",
     "static/media/reset-password.png": "/CV-Portfolio/static/media/reset-password.424bc7d415b7ec297617.png",
     "static/media/gameover1.png": "/CV-Portfolio/static/media/gameover1.fcc53f0d128f02a86eec.png",
     "static/media/update password.png": "/CV-Portfolio/static/media/update password.a5a7da0da3d725330156.png",
@@ -50,6 +50,7 @@
     "static/media/update email.png": "/CV-Portfolio/static/media/update email.efddfdfa37de8c379072.png",
     "static/media/search.png": "/CV-Portfolio/static/media/search.6cbc71857e9cbec8b1c5.png",
     "static/media/sass.png": "/CV-Portfolio/static/media/sass.c5da83bb9ff45b84e0e7.png",
+    "static/media/mongodb.png": "/CV-Portfolio/static/media/mongodb.a74d89046d161af2f141.png",
     "static/media/telus.png": "/CV-Portfolio/static/media/telus.8b4e02f29e045eb01b01.png",
     "static/media/products-delete.png": "/CV-Portfolio/static/media/products-delete.7a714c7607f232b48f3e.png",
     "static/media/status.png": "/CV-Portfolio/static/media/status.7e01303b849206f36ec2.png",
@@ -62,12 +63,12 @@
     "static/media/css.png": "/CV-Portfolio/static/media/css.463e319bad8e0edf1ef7.png",
     "static/media/java.png": "/CV-Portfolio/static/media/java.6c64373d3b7415758078.png",
     "index.html": "/CV-Portfolio/index.html",
-    "main.b083ce83.css.map": "/CV-Portfolio/static/css/main.b083ce83.css.map",
-    "main.224b93b5.js.map": "/CV-Portfolio/static/js/main.224b93b5.js.map",
+    "main.a783d270.css.map": "/CV-Portfolio/static/css/main.a783d270.css.map",
+    "main.f60eab55.js.map": "/CV-Portfolio/static/js/main.f60eab55.js.map",
     "787.1ed0c42c.chunk.js.map": "/CV-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b083ce83.css",
-    "static/js/main.224b93b5.js"
+    "static/css/main.a783d270.css",
+    "static/js/main.f60eab55.js"
   ]
 }
