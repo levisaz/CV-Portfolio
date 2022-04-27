@@ -43,7 +43,11 @@ const images = [
 
 const JavaGameCard = () => {
     const [show, setShow] = useState(false);
-    const handleShow = () => setShow(!show);
+    const handleShow = () => {
+        setShow(!show);
+        setFullscreen(true);
+        }
+    const [fullscreen, setFullscreen] = useState(true);
 
   return (
     <>
@@ -56,7 +60,7 @@ const JavaGameCard = () => {
             text = {data.text}
             click = {handleShow}
         />
-        <Modal size="xl" show={show} onHide={handleShow} >
+        <Modal fullscreen={fullscreen} show={show} onHide={handleShow} >
             <Modal.Header closeButton >
             <Modal.Title>{data.modal_title}</Modal.Title>
             </Modal.Header>

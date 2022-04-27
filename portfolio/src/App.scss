@@ -53,6 +53,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 25px;
     font-size: 1.5rem;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    white-space: nowrap;
     >* {
         text-shadow: 0 2px 0 #000;
         font-weight: 400;
@@ -74,6 +75,23 @@ body::-webkit-scrollbar-thumb {
 /* Desktop First Approach - Bigger to Smaller Screen Size */
 
 
+/* Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {}
+
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    body p {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        width: 30vw!important;
+    }
+}
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
@@ -89,22 +107,8 @@ body::-webkit-scrollbar-thumb {
             }
         }
     }
-}
-
-
-/* Small devices (landscape phones, less than 768px) */
-
-@media (max-width: 767.98px) {}
-
-
-/* Medium devices (tablets, less than 992px) */
-
-@media (max-width: 991.98px) {
-    body p {
-        font-size: 1.2rem;
-    }
     .section-title {
-        width: 30vw!important;
+        width: 50vw!important;
     }
 }
 

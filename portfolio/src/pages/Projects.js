@@ -16,7 +16,7 @@ const Projects = () => {
   const showToggler = () => {
     setShow(!show)
   }
-
+  const [isDarkMode, setIsDarkMode] = useState(true);
   return (
     <section id="projects" className={show ? 'section-layout' : null}>
     <Container data-aos="zoom-in" fluid className='project-section'>

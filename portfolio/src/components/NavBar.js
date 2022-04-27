@@ -61,7 +61,10 @@ const NavBar = ({theme, setTheme}) => {
                 <Nav.Link href="#projects">Projects</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
                 <DarkModeToggle
-                  onChange={() => setTheme(!theme)}
+                  onChange={() => {
+                    setTheme(!theme)
+                    setNavExpanded(false)
+                  }}
                   checked={theme}
                   size={50}
                   className="theme-toggler"

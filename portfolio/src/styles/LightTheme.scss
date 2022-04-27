@@ -1,6 +1,6 @@
 /* light theme */
 
-.light-mode {
+.light-theme {
     .main-content {
         >* {
             transition: all .5s ease;
@@ -89,6 +89,11 @@
     #contact {
         .contact-form {
             border: 1px solid #10121B;
+            input[type="email"],
+            input[type="text"],
+            textarea[type="text"] {
+                color: #10121B;
+            }
             .form-control {
                 border-bottom: 2px solid #10121B;
             }

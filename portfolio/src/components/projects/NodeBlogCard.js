@@ -32,7 +32,11 @@ const images = [
 
 const NodeBlogCard = () => {
     const [show, setShow] = useState(false);
-  const handleShow = () => setShow(!show);
+    const handleShow = () => {
+        setShow(!show);
+        setFullscreen(true);
+        }
+    const [fullscreen, setFullscreen] = useState(true);
   return (
     <>
         {info.map(data => (
@@ -44,7 +48,7 @@ const NodeBlogCard = () => {
             text = {data.text}
             click = {handleShow}
         />
-        <Modal size="xl" show={show} onHide={handleShow} >
+        <Modal fullscreen={fullscreen} show={show} onHide={handleShow} >
             <Modal.Header closeButton >
             <Modal.Title>{data.title}</Modal.Title>
             </Modal.Header>

@@ -10,7 +10,6 @@ import About from './pages/About'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
-/* import DarkModeToggle from "react-dark-mode-toggle"; */
 import ScrollToTop from "react-scroll-to-top";
 
 import AOS from 'aos';
@@ -18,9 +17,15 @@ import 'aos/dist/aos.css';
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
   AOS.init();
+
+  const light_modal = `.modal-dialog .modal-content{
+    color: #10121B !important;
+    background-color: #c9cbdb;
+  }`
+
   return (
     
-      <div className={isDarkMode ? "App" : "App light-mode"}>
+      <div className={isDarkMode ? "App" : "App light-theme"}>
         <NavBar
           theme = {isDarkMode}
           setTheme = {setIsDarkMode}
@@ -29,7 +34,7 @@ function App() {
         <div className="main-content">
           
           <Hero  />
-          <About data-aos="zoom-in-up" />
+          <About />
           <Skills />
           <Projects />
           <Contact />
@@ -37,6 +42,11 @@ function App() {
           
         </div>
         <ScrollToTop smooth top="800" />
+
+        {isDarkMode?
+          null : <style>{light_modal}</style>
+        }
+        
     </div>
     
   );
